@@ -49,13 +49,13 @@ body {
   color: var(--title-text-color);
 }
 
-.site-nav .link.current {
-  color: var(--accent-color);
-}
-
 /*contact-nav*/
 .contact-nav .link {
   color: var(--primary-text-color);
+}
+
+.site-nav .link.current {
+  color: var(--accent-color);
 }
 
 .site-nav .link:hover,
