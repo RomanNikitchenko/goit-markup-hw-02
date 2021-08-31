@@ -49,6 +49,10 @@ body {
   color: var(--title-text-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 /*contact-nav*/
 .contact-nav .link {
   color: var(--primary-text-color);
@@ -66,21 +70,6 @@ body {
   color: var(--text-color-white);
 }
 
-/*section*/
-.section-title {
-  color: var(--title-text-color);
-}
-
-/*features*/
-.feature-list .title {
-  color: var(--title-text-color);
-}
-
-/*our team*/
-.team-list .title {
-  color: var(--title-text-color);
-}
-
 /*button*/
 .button {
   color: var(--text-color-blac);
@@ -95,4 +84,19 @@ body {
 .button.light {
   color: var(--title-text-color);
   background-color: var(--bg-color-light);
+}
+
+/*section*/
+.section-title {
+  color: var(--title-text-color);
+}
+
+/*features*/
+.feature-list .title {
+  color: var(--title-text-color);
+}
+
+/*our team*/
+.team-list .title {
+  color: var(--title-text-color);
 }
