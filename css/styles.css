@@ -13,7 +13,7 @@
   --primary-text-color: #757575;
   --title-text-color: #212121;
   --accent-color: #2196f3;
-  --text-color-white: rgba(255, 255, 255, 0.6);
+  --text-color-white-a: rgba(255, 255, 255, 0.6);
   --text-color-white: #ffffff;
   --text-color-blac: #000000;
   --bg-color-white: #ffffff;
@@ -27,7 +27,7 @@
 body {
   color: var(--primary-text-color);
   background-color: #e5e5e5;
-  width: 1600px;
+  font-family: Roboto, sans-serif;
 }
 
 /*header*/
@@ -35,12 +35,12 @@ body {
   background-color: var(--text-color-white);
 }
 
-/*logo*/
-.logo {
+/*logo header*/
+.page-header .logo {
   color: var(--text-color-blac);
 }
 
-.logo span {
+.logo .web {
   color: var(--accent-color);
 }
 
@@ -99,4 +99,18 @@ body {
 /*our team*/
 .team-list .title {
   color: var(--title-text-color);
+}
+
+.contact-footer .link {
+  color: var(--primary-text-color);
+}
+
+.contact-footer .link:hover,
+.contact-footer .link:focus {
+  color: var(--accent-color);
+}
+
+/*logo footer*/
+.page-footer .logo {
+  color: var(--text-color-white);
 }
