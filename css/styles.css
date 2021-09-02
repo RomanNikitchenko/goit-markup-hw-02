@@ -28,6 +28,7 @@ body {
   color: var(--primary-text-color);
   background-color: #e5e5e5;
   font-family: Roboto, sans-serif;
+  letter-spacing: 0.03em;
 }
 
 /*header*/
@@ -36,8 +37,9 @@ body {
 }
 
 /*logo header*/
-.page-header .logo {
+.logo {
   color: var(--text-color-blac);
+  font-family: Raleway, cursive;
 }
 
 .logo .web {
@@ -47,11 +49,13 @@ body {
 /*site-nav*/
 .site-nav .link {
   color: var(--title-text-color);
+  letter-spacing: 0.02em;
 }
 
 /*contact-nav*/
 .contact-nav .link {
   color: var(--primary-text-color);
+  letter-spacing: 0.02em;
 }
 
 .site-nav .link.current {
@@ -66,8 +70,9 @@ body {
 }
 
 /*hero*/
-.hero-title {
+.hero .hero-title {
   color: var(--text-color-white);
+  letter-spacing: 0.06em;
 }
 
 /*button*/
@@ -79,6 +84,7 @@ body {
 .button.primary {
   color: var(--text-color-white);
   background-color: var(--accent-color);
+  letter-spacing: 0.06em;
 }
 
 .button.light {
@@ -101,8 +107,9 @@ body {
   color: var(--title-text-color);
 }
 
+/*footer*/
 .contact-footer .link {
-  color: var(--primary-text-color);
+  color: var(--text-color-white-a);
 }
 
 .contact-footer .link:hover,
