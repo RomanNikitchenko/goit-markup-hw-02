@@ -77,19 +77,22 @@ body {
 
 /*button*/
 .button {
-  color: var(--text-color-blac);
-  background-color: var(--bg-color-white);
+  color: var(--title-text-color);
+  background-color: var(--bg-color-light);
 }
 
 .button.primary {
   color: var(--text-color-white);
   background-color: var(--accent-color);
-  letter-spacing: 0.06em;
 }
 
 .button.light {
   color: var(--title-text-color);
   background-color: var(--bg-color-light);
+}
+
+.hero .button {
+  letter-spacing: 0.06em;
 }
 
 /*section*/
