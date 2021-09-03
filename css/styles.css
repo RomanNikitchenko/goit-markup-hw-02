@@ -1,12 +1,12 @@
 /*цвет текста основной #212121;*/
 /*цвет текста вторичный #757575;*/
-/*цвет текста WebStudio 000000 2196F3 FFFFFF*/
+/*цвет текста WebStudio #000000 #2196F3 #FFFFFF*/
 /*цвет текста кнопка, ссылки #2196F3;*/
-/*нижние контакты 255, 255, 255, 0.6);*/
+/*нижние контакты rgba(255, 255, 255, 0.6);*/
 /*цвет фона оновной #E5E5E5;*/
 /*цвет фона хедер #FFFFFF;*/
 /*цвет фона шапка, футер  #2F303A;*/
-/*цвет фона наша команта #F5F4FA*/
+/*цвет фона наша команта #F5F4FA;*/
 /*цвет фона наша команда карточки #FFFFFF;*/
 
 :root {
@@ -18,6 +18,7 @@
   --text-color-blac: #000000;
   --bg-color-white: #ffffff;
   --bg-color-light: #f5f4fa;
+  --bg-color-hero: #2f303a;
 }
 
 .list {
@@ -29,37 +30,47 @@ body {
   background-color: #e5e5e5;
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
+  font-size: 14px;
 }
 
 /*header*/
+
 .page-header {
   background-color: var(--text-color-white);
 }
 
 /*logo header*/
+
 .logo {
   color: var(--text-color-blac);
   font-family: Raleway, cursive;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  text-decoration: none;
 }
 
-.logo .web {
+.logo .accent {
   color: var(--accent-color);
 }
 
-/*site-nav*/
-.site-nav .link {
+/*site-nav and contact-nav*/
+
+.site-nav .link,
+.contact-nav .link {
   color: var(--title-text-color);
   letter-spacing: 0.02em;
-}
-
-/*contact-nav*/
-.contact-nav .link {
-  color: var(--primary-text-color);
-  letter-spacing: 0.02em;
+  font-weight: 500;
+  line-height: 1.15;
+  text-decoration: none;
 }
 
 .site-nav .link.current {
   color: var(--accent-color);
+}
+
+.contact-nav .link {
+  color: var(--primary-text-color);
 }
 
 .site-nav .link:hover,
@@ -70,12 +81,35 @@ body {
 }
 
 /*hero*/
+
+.hero {
+  background-color: var(--bg-color-hero);
+}
+
 .hero .hero-title {
   color: var(--text-color-white);
+  letter-spacing: 0.06em;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/*hero button*/
+
+.hero .button.primary {
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.8;
+  align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
 }
 
 /*button*/
+
 .button {
   color: var(--title-text-color);
   background-color: var(--bg-color-light);
@@ -91,36 +125,75 @@ body {
   background-color: var(--bg-color-light);
 }
 
-.hero .button {
-  letter-spacing: 0.06em;
-}
-
 /*section*/
+
 .section-title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
 }
 
 /*features*/
+
 .feature-list .title {
   color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+
+.feature-list .text {
+  font-weight: normal;
+  line-height: 1.7;
 }
 
 /*our team*/
-.team-list .title {
+
+.team {
+  background-color: var(--bg-color-light);
+}
+
+.team-list .title,
+.team-list .text {
   color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+}
+
+.team-list .text {
+  font-weight: normal;
 }
 
 /*footer*/
+
+.page-footer {
+  background-color: var(--bg-color-hero);
+}
+
+/*logo footer*/
+.page-footer .logo {
+  color: #f5f4fa;
+}
+
+.page-footer .street,
+.contact-footer .link {
+  color: var(--text-color-white);
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1.7;
+}
+
 .contact-footer .link {
   color: var(--text-color-white-a);
+  text-decoration: none;
 }
 
 .contact-footer .link:hover,
 .contact-footer .link:focus {
   color: var(--accent-color);
-}
-
-/*logo footer*/
-.page-footer .logo {
-  color: var(--text-color-white);
 }
