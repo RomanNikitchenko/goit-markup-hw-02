@@ -19,7 +19,6 @@
   --bg-color-white: #ffffff;
   --bg-color-light: #f5f4fa;
   --bg-color-hero: #2f303a;
-  --bg-color-body: #e5e5e5;
 }
 
 .list {
@@ -28,7 +27,7 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: var(--bg-color-body);
+  background-color: var(--bg-color-white);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -59,11 +58,11 @@ body {
 
 .site-nav .link,
 .contact-nav .link {
-  color: var(--title-text-color);
-  letter-spacing: 0.02em;
   font-weight: 500;
   line-height: 1.15;
+  letter-spacing: 0.02em;
   text-decoration: none;
+  color: var(--title-text-color);
 }
 
 .site-nav .link.current {
@@ -88,13 +87,13 @@ body {
 }
 
 .hero .hero-title {
-  color: var(--text-color-white);
-  letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
+  color: var(--text-color-white);
 }
 
 /*hero button*/
@@ -129,21 +128,21 @@ body {
 /*section*/
 
 .section-title {
-  color: var(--title-text-color);
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
   text-align: center;
+  color: var(--title-text-color);
 }
 
 /*features*/
 
 .feature-list .title {
-  color: var(--title-text-color);
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  color: var(--title-text-color);
 }
 
 .feature-list .text {
@@ -156,9 +155,13 @@ body {
   background-color: var(--bg-color-light);
 }
 
+.team-list .team-member {
+  background-color: var(--bg-color-white);
+}
+
 .team-list .title {
-  color: var(--title-text-color);
   font-weight: 500;
+  color: var(--title-text-color);
 }
 
 .team-list .title,
@@ -172,16 +175,16 @@ body {
 
 .page-footer {
   background-color: var(--bg-color-hero);
+  color: var(--text-color-white);
 }
 
 /*logo footer*/
 .page-footer .logo {
-  color: #f5f4fa;
+  color: var(--text-color-white);
 }
 
-.page-footer .street,
+.contact-footer .text,
 .contact-footer .link {
-  color: var(--text-color-white);
   font-style: normal;
   line-height: 1.71;
 }
