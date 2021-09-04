@@ -1,6 +1,6 @@
-/*цвет текста основной #212121;*/
 /*цвет текста вторичный #757575;*/
-/*цвет текста WebStudio #000000 #2196F3 #FFFFFF*/
+/*цвет текста основной #212121;*/
+/*цвет текста WebStudio #000000 #2196F3 #FFFFFF;*/
 /*цвет текста кнопка, ссылки #2196F3;*/
 /*нижние контакты rgba(255, 255, 255, 0.6);*/
 /*цвет фона оновной #E5E5E5;*/
@@ -19,6 +19,7 @@
   --bg-color-white: #ffffff;
   --bg-color-light: #f5f4fa;
   --bg-color-hero: #2f303a;
+  --bg-color-body: #e5e5e5;
 }
 
 .list {
@@ -27,7 +28,7 @@
 
 body {
   color: var(--primary-text-color);
-  background-color: #e5e5e5;
+  background-color: var(--bg-color-body);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
   font-size: 14px;
@@ -39,14 +40,14 @@ body {
   background-color: var(--text-color-white);
 }
 
-/*logo header*/
+/*header logo*/
 
 .logo {
   color: var(--text-color-blac);
   font-family: Raleway, cursive;
   font-weight: bold;
   font-size: 26px;
-  line-height: 1.2;
+  line-height: 1.19;
   text-decoration: none;
 }
 
@@ -91,7 +92,7 @@ body {
   letter-spacing: 0.06em;
   font-weight: 900;
   font-size: 44px;
-  line-height: 1.4;
+  line-height: 1.36;
   text-align: center;
   text-transform: uppercase;
 }
@@ -102,7 +103,7 @@ body {
   font-family: inherit;
   font-weight: bold;
   font-size: 16px;
-  line-height: 1.8;
+  line-height: 1.87;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
@@ -146,8 +147,7 @@ body {
 }
 
 .feature-list .text {
-  font-weight: normal;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 /*our team*/
@@ -156,17 +156,16 @@ body {
   background-color: var(--bg-color-light);
 }
 
-.team-list .title,
-.team-list .text {
+.team-list .title {
   color: var(--title-text-color);
   font-weight: 500;
+}
+
+.team-list .title,
+.team-list .text {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
-}
-
-.team-list .text {
-  font-weight: normal;
 }
 
 /*footer*/
@@ -184,8 +183,7 @@ body {
 .contact-footer .link {
   color: var(--text-color-white);
   font-style: normal;
-  font-weight: normal;
-  line-height: 1.7;
+  line-height: 1.71;
 }
 
 .contact-footer .link {
