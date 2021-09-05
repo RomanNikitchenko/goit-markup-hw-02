@@ -19,6 +19,7 @@
   --bg-color-white: #ffffff;
   --bg-color-light: #f5f4fa;
   --bg-color-hero: #2f303a;
+  --block-border-line: #ececec;
 }
 
 .list {
@@ -34,13 +35,12 @@ body {
 }
 
 /*header*/
-
 .page-header {
   background-color: var(--text-color-white);
+  border-bottom: 1px solid var(--block-border-line);
 }
 
 /*header logo*/
-
 .logo {
   color: var(--text-color-blac);
   font-family: Raleway, cursive;
@@ -55,7 +55,6 @@ body {
 }
 
 /*site-nav and contact-nav*/
-
 .site-nav .link,
 .contact-nav .link {
   font-weight: 500;
@@ -81,7 +80,6 @@ body {
 }
 
 /*hero*/
-
 .hero {
   background-color: var(--bg-color-hero);
 }
@@ -97,7 +95,6 @@ body {
 }
 
 /*hero button*/
-
 .hero .button.primary {
   font-family: inherit;
   font-weight: bold;
@@ -109,7 +106,6 @@ body {
 }
 
 /*button*/
-
 .button {
   color: var(--title-text-color);
   background-color: var(--bg-color-light);
@@ -120,13 +116,21 @@ body {
   background-color: var(--accent-color);
 }
 
-.button.light {
-  color: var(--title-text-color);
-  background-color: var(--bg-color-light);
+.filter .button {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+}
+
+.filter .button:hover,
+.filter .button:focus {
+  color: var(--text-color-white);
+  background-color: var(--accent-color);
 }
 
 /*section*/
-
 .section-title {
   font-weight: bold;
   font-size: 36px;
@@ -136,7 +140,6 @@ body {
 }
 
 /*features*/
-
 .feature-list .title {
   font-weight: bold;
   font-size: 14px;
@@ -150,7 +153,6 @@ body {
 }
 
 /*our team*/
-
 .team {
   background-color: var(--bg-color-light);
 }
@@ -171,8 +173,25 @@ body {
   text-align: center;
 }
 
-/*footer*/
+/*page portfolio our work*/
+.works-list .works-categories {
+  background-color: var(--bg-color-white);
+}
 
+.works-list .title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-text-color);
+}
+
+.works-list .text {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+/*footer*/
 .page-footer {
   background-color: var(--bg-color-hero);
   color: var(--text-color-white);
