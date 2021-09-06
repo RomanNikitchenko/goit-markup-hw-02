@@ -109,6 +109,7 @@ body {
 .button {
   color: var(--title-text-color);
   background-color: var(--bg-color-light);
+  cursor: pointer;
 }
 
 .button.primary {
