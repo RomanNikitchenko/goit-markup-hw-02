@@ -160,6 +160,7 @@ body {
 
 .team-list .team-member {
   background-color: var(--bg-color-white);
+  text-align: center;
 }
 
 .team-list .title {
@@ -171,7 +172,6 @@ body {
 .team-list .text {
   font-size: 16px;
   line-height: 1.18;
-  text-align: center;
 }
 
 /*page portfolio our work*/
